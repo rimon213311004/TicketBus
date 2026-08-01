@@ -6,6 +6,11 @@ dotenv.config({ path: path.resolve(__dirname, '../../../.env') });
 const defaultClientUrl = process.env.NODE_ENV === 'production'
   ? 'https://ticket-bus-client.vercel.app'
   : 'http://localhost:5173';
+const configuredClientUrl = process.env.CLIENT_URL ?? defaultClientUrl;
+const allowedOrigins = [...configuredClientUrl.split(','), defaultClientUrl]
+  .map((origin) => origin.trim().replace(/\/$/, ''))
+  .filter(Boolean)
+  .filter((origin, index, origins) => origins.indexOf(origin) === index);
 
 function required(key: string): string {
   const value = process.env[key];
@@ -16,12 +21,8 @@ function required(key: string): string {
 export const env = {
   nodeEnv: process.env.NODE_ENV ?? 'development',
   port: Number(process.env.PORT ?? 5000),
-  clientUrl: process.env.CLIENT_URL ?? defaultClientUrl,
-  allowedOrigins: (process.env.CLIENT_URL ?? defaultClientUrl)
-    .split(',')
-    .map((origin) => origin.trim())
-    .map((origin) => origin.replace(/\/$/, ''))
-    .filter(Boolean),
+  clientUrl: configuredClientUrl,
+  allowedOrigins,
   mongoUri: required('MONGO_URI'),
   jwt: {
     accessSecret: required('JWT_ACCESS_SECRET'),
