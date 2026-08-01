@@ -3,11 +3,12 @@ import path from 'path';
 
 dotenv.config({ path: path.resolve(__dirname, '../../../.env') });
 
+const productionClientUrl = 'https://ticket-bus-client.vercel.app';
 const defaultClientUrl = process.env.NODE_ENV === 'production'
-  ? 'https://ticket-bus-client.vercel.app'
+  ? productionClientUrl
   : 'http://localhost:5173';
 const configuredClientUrl = process.env.CLIENT_URL ?? defaultClientUrl;
-const allowedOrigins = [...configuredClientUrl.split(','), defaultClientUrl]
+const allowedOrigins = [...configuredClientUrl.split(','), defaultClientUrl, productionClientUrl]
   .map((origin) => origin.trim().replace(/\/$/, ''))
   .filter(Boolean)
   .filter((origin, index, origins) => origins.indexOf(origin) === index);
