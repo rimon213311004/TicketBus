@@ -9,6 +9,14 @@
 
 TicketBus lets travellers search routes, compare operators, choose exact seats, submit payment proof, and download confirmed e-tickets. The admin control center handles payment verification, ticket issuance, sales metrics, and schedule-based live bus operations.
 
+## Live Deployment
+
+| Service | Link |
+| --- | --- |
+| Frontend | [ticket-bus-client.vercel.app](https://ticket-bus-client.vercel.app/) |
+| Backend API | [ticketbus-snv5.onrender.com](https://ticketbus-snv5.onrender.com) |
+| API health check | [ticketbus-snv5.onrender.com/health](https://ticketbus-snv5.onrender.com/health) |
+
 ## Contents
 
 - [Product Tour](#product-tour)
