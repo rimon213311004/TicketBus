@@ -3,6 +3,10 @@ import path from 'path';
 
 dotenv.config({ path: path.resolve(__dirname, '../../../.env') });
 
+const defaultClientUrl = process.env.NODE_ENV === 'production'
+  ? 'https://ticket-bus-client.vercel.app'
+  : 'http://localhost:5173';
+
 function required(key: string): string {
   const value = process.env[key];
   if (!value) throw new Error(`Missing required environment variable: ${key}`);
@@ -12,10 +16,11 @@ function required(key: string): string {
 export const env = {
   nodeEnv: process.env.NODE_ENV ?? 'development',
   port: Number(process.env.PORT ?? 5000),
-  clientUrl: process.env.CLIENT_URL ?? 'http://localhost:5173',
-  allowedOrigins: (process.env.CLIENT_URL ?? 'http://localhost:5173')
+  clientUrl: process.env.CLIENT_URL ?? defaultClientUrl,
+  allowedOrigins: (process.env.CLIENT_URL ?? defaultClientUrl)
     .split(',')
     .map((origin) => origin.trim())
+    .map((origin) => origin.replace(/\/$/, ''))
     .filter(Boolean),
   mongoUri: required('MONGO_URI'),
   jwt: {

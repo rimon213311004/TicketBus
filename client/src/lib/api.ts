@@ -1,7 +1,9 @@
 import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
 import { useAuthStore } from '@/store/authStore';
 
-const apiOrigin = (import.meta.env.VITE_API_URL ?? '').replace(/\/$/, '');
+const apiOrigin = (
+  import.meta.env.VITE_API_URL ?? 'https://ticketbus-snv5.onrender.com'
+).replace(/\/$/, '');
 
 export const api = axios.create({
   baseURL: `${apiOrigin}/api`,
