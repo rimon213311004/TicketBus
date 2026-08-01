@@ -1,0 +1,150 @@
+[
+  {
+    "_id": "6a6a545cd593d3db7dc5fdb4",
+    "bookingCode": "TB-U8MGQTSM",
+    "status": "PENDING_PAYMENT",
+    "seatNumbers": [
+      "B2"
+    ],
+    "journeyDate": "2026-08-05T01:00:00.000Z",
+    "tripId": "6a6a49b532f25b4ba5a48958",
+    "tripCode": "TR011",
+    "tripDeparture": "2026-08-05T01:00:00.000Z",
+    "routeId": "6a6a49b232f25b4ba5a4886f",
+    "from": "Dhaka",
+    "to": "Sylhet",
+    "operator": "6a6a49b132f25b4ba5a4885f",
+    "boardingPoint": "6a6a49b232f25b4ba5a4887f",
+    "droppingPoint": "6a6a49b232f25b4ba5a48886"
+  },
+  {
+    "_id": "6a6a5497d593d3db7dc5fdfa",
+    "bookingCode": "TB-G8GLRY2B",
+    "status": "CONFIRMED",
+    "seatNumbers": [
+      "A1",
+      "A2"
+    ],
+    "journeyDate": "2026-08-02T00:00:00.000Z",
+    "tripId": "6a6a49b532f25b4ba5a48903",
+    "tripCode": "TR001",
+    "tripDeparture": "2026-08-02T00:00:00.000Z",
+    "routeId": "6a6a49b232f25b4ba5a48867",
+    "from": "Dhaka",
+    "to": "Chattogram",
+    "operator": "6a6a49b132f25b4ba5a4885e",
+    "boardingPoint": "6a6a49b232f25b4ba5a4887f",
+    "droppingPoint": "6a6a49b232f25b4ba5a48881"
+  },
+  {
+    "_id": "6a6a549dd593d3db7dc5fe3a",
+    "bookingCode": "TB-VRXR7K7D",
+    "status": "PENDING_PAYMENT",
+    "seatNumbers": [
+      "B1"
+    ],
+    "journeyDate": "2026-08-02T00:00:00.000Z",
+    "tripId": "6a6a49b532f25b4ba5a48903",
+    "tripCode": "TR001",
+    "tripDeparture": "2026-08-02T00:00:00.000Z",
+    "routeId": "6a6a49b232f25b4ba5a48867",
+    "from": "Dhaka",
+    "to": "Chattogram",
+    "operator": "6a6a49b132f25b4ba5a4885e",
+    "boardingPoint": "6a6a49b232f25b4ba5a4887f",
+    "droppingPoint": "6a6a49b232f25b4ba5a48881"
+  },
+  {
+    "_id": "6a6a549fd593d3db7dc5fe5a",
+    "bookingCode": "TB-VF4EKRJA",
+    "status": "PENDING_PAYMENT",
+    "seatNumbers": [
+      "C1"
+    ],
+    "journeyDate": "2026-08-02T00:00:00.000Z",
+    "tripId": "6a6a49b532f25b4ba5a48903",
+    "tripCode": "TR001",
+    "tripDeparture": "2026-08-02T00:00:00.000Z",
+    "routeId": "6a6a49b232f25b4ba5a48867",
+    "from": "Dhaka",
+    "to": "Chattogram",
+    "operator": "6a6a49b132f25b4ba5a4885e",
+    "boardingPoint": "6a6a49b232f25b4ba5a4887f",
+    "droppingPoint": "6a6a49b232f25b4ba5a48881"
+  },
+  {
+    "_id": "6a6a55dbd593d3db7dc5fe9a",
+    "bookingCode": "TB-6QY3KL68",
+    "status": "AWAITING_VERIFICATION",
+    "seatNumbers": [
+      "A1",
+      "A2"
+    ],
+    "journeyDate": "2026-07-30T08:00:00.000Z",
+    "tripId": "6a6a49b532f25b4ba5a488bd",
+    "tripCode": "TR006",
+    "tripDeparture": "2026-07-30T08:00:00.000Z",
+    "routeId": "6a6a49b232f25b4ba5a48870",
+    "from": "Dhaka",
+    "to": "Rajshahi",
+    "operator": "6a6a49b132f25b4ba5a48864",
+    "boardingPoint": "6a6a49b232f25b4ba5a4887f",
+    "droppingPoint": "6a6a49b232f25b4ba5a48889"
+  },
+  {
+    "_id": "6a6cd42b778d0afe23c9f581",
+    "bookingCode": "TB-D85TS6TU",
+    "status": "AWAITING_VERIFICATION",
+    "seatNumbers": [
+      "B4",
+      "C4",
+      "D4"
+    ],
+    "journeyDate": "2026-08-01T01:00:00.000Z",
+    "tripId": "6a6a49b532f25b4ba5a488f4",
+    "tripCode": "TR011",
+    "tripDeparture": "2026-08-01T01:00:00.000Z",
+    "routeId": "6a6a49b232f25b4ba5a4886f",
+    "from": "Dhaka",
+    "to": "Sylhet",
+    "operator": "6a6a49b132f25b4ba5a4885f",
+    "boardingPoint": "6a6a49b232f25b4ba5a48878",
+    "droppingPoint": "6a6a49b232f25b4ba5a48887"
+  },
+  {
+    "_id": "6a6cd4d4778d0afe23c9f613",
+    "bookingCode": "TB-FJWRZWCN",
+    "status": "PENDING_PAYMENT",
+    "seatNumbers": [
+      "A3"
+    ],
+    "journeyDate": "2026-08-07T00:00:00.000Z",
+    "tripId": "6a6a49b532f25b4ba5a48980",
+    "tripCode": "TR001",
+    "tripDeparture": "2026-08-07T00:00:00.000Z",
+    "routeId": "6a6a49b232f25b4ba5a48867",
+    "from": "Dhaka",
+    "to": "Chattogram",
+    "operator": "6a6a49b132f25b4ba5a4885e",
+    "boardingPoint": "6a6a49b232f25b4ba5a4887d",
+    "droppingPoint": "6a6a49b232f25b4ba5a48881"
+  },
+  {
+    "_id": "6a6cd4f6778d0afe23c9f638",
+    "bookingCode": "TB-WZHBW6XS",
+    "status": "AWAITING_VERIFICATION",
+    "seatNumbers": [
+      "A3"
+    ],
+    "journeyDate": "2026-08-07T00:00:00.000Z",
+    "tripId": "6a6a49b532f25b4ba5a48980",
+    "tripCode": "TR001",
+    "tripDeparture": "2026-08-07T00:00:00.000Z",
+    "routeId": "6a6a49b232f25b4ba5a48867",
+    "from": "Dhaka",
+    "to": "Chattogram",
+    "operator": "6a6a49b132f25b4ba5a4885e",
+    "boardingPoint": "6a6a49b232f25b4ba5a4887f",
+    "droppingPoint": "6a6a49b232f25b4ba5a48881"
+  }
+]

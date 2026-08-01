@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+.env
+.env.local
+*.log
+logs/
+server/uploads/
+.cache/
+.DS_Store
+.vite/
+coverage/
+seed-cache.json

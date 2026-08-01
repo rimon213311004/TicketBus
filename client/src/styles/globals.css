@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-surface text-ink font-sans antialiased;
+    background-image: linear-gradient(rgba(23, 36, 43, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(23, 36, 43, 0.025) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  .dark body {
+    @apply bg-surface-dark text-slate-100;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-600 ring-offset-2 ring-offset-white;
+  }
+
+  .dark :focus-visible {
+    @apply ring-offset-surface-dark;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-card rounded-2xl shadow-soft border border-line;
+    box-shadow: 0 1px 2px rgba(23, 36, 43, 0.04), 0 18px 45px rgba(23, 36, 43, 0.06);
+  }
+
+  .dark .card {
+    @apply bg-card-dark border-line-dark;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-ink
+           placeholder:text-slate-400 transition
+           focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 focus:outline-none;
+  }
+
+  .dark .input {
+    @apply bg-slate-900 border-line-dark text-slate-100 placeholder:text-slate-500;
+  }
+
+  .input:disabled {
+    @apply cursor-not-allowed bg-slate-100 text-slate-500;
+  }
+
+  .dark .input:disabled {
+    @apply bg-slate-800 text-slate-400;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-slate-700 mb-1.5;
+  }
+
+  .dark .label {
+    @apply text-slate-300;
+  }
+
+  .skeleton {
+    @apply relative overflow-hidden bg-slate-200 rounded-lg;
+  }
+
+  .dark .skeleton {
+    @apply bg-slate-800;
+  }
+
+  .skeleton::after {
+    @apply absolute inset-0 -translate-x-full animate-shimmer;
+    content: '';
+    background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  }
+
+  .dark .skeleton::after {
+    background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+  }
+
+  .route-dash {
+    background-image: repeating-linear-gradient(90deg, #f39a45 0 12px, transparent 12px 22px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
